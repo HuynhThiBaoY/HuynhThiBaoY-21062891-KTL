@@ -1,0 +1,243 @@
+/* Đặt kiểu chữ và màu sắc chính */
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFF0F4;
+
+    padding: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Kiểu cho phần đầu trang */
+header {
+    background-color: #fadee5;
+    padding: 10px;
+  text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+    padding-left: 0; /* Loại bỏ khoảng cách từ bên trái của menu cấp 2 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+    padding: 5px 5px;
+    padding-left: 0; /* Loại bỏ khoảng cách từ bên trái của menu cấp 2 */
+}
+
+.dropdown-content li a {
+
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px; /* Điều chỉnh kích thước khung chứa chữ */
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+    color: blue; /* Điều chỉnh màu sắc chữ khi hover */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+  
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 19px; /* Kích thước chữ */
+    line-height: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Kiểu cho các phần chính của trang web */
+main {
+    padding: 40px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+.about button{
+    border-radius: 10px; /* Bo góc */
+    padding: 10px 20px; /* Chỉnh kích thước khung */
+    background-color: #2daa2d;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    width: 300px; /* Đặt chiều rộng phần tử service */
+    height: 400px; /* Đặt chiều cao phần tử service */
+    border: 2px solid #000; /* Thiết lập viền kích thước 2px và màu đen */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    margin: 20px; /* Khoảng cách giữa các phần tử */
+    box-sizing: border-box; /* Đảm bảo kích thước của phần tử tính cả padding và border */
+    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+    flex-direction: column; /* Xếp nội dung theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+.service img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước của khung */
+    max-height: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước của khung */
+    object-fit: contain; /* Hiển thị hình ảnh với tỷ lệ khung hình, nhưng đảm bảo hình ảnh không bị vặn hoặc bị cắt bớt */
+}
+
+
+.skills .skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    background-color: #4d9957;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.skill-level {
+    background-color: #406140;
+    height: 100%;
+    border-radius: 10px;
+}
+/**/
+
+main {
+    padding: 40px;
+}
+
+.mission,
+.story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 2px solid #333; /* Đường viền màu đen, rộng 2px */
+    border-radius: 10px; /* Bo góc 10px */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #f3c7c7; /* Màu nền nhạt */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+
+}
+
+.mission-text,
+.story-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.mission-image,
+.story-image {
+    flex: 1;
+    text-align: center;
+}
+
+.mission-image img,
+.story-image img {
+    max-width: 40%;
+    height: auto;
+}
+.mission-image img,
+.story-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Kiểu cho phần chân trang */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
